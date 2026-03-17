@@ -1,9 +1,14 @@
-var CACHE_NAME = 'freeslides-v1';
+var CACHE_NAME = 'freeslides-v2';
 var URLS_TO_CACHE = [
   '/',
   '/index.html',
   '/manifest.json',
-  '/og-image.svg'
+  '/og-image.svg',
+  '/vs-google-slides.html',
+  '/vs-canva.html',
+  '/vs-powerpoint.html',
+  '/free-presentation-maker-no-signup.html',
+  '/free-presentation-maker-for-students.html'
 ];
 
 self.addEventListener('install', function(event) {
