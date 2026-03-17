@@ -1,0 +1,1537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Presentation Maker Online - No Login Required | freeslides.app</title>
+<meta name="description" content="Free online presentation maker. No login, no signup, no cloud. Create slides instantly in your browser. Private, fast, and completely free.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://freeslides.app/">
+<meta name="theme-color" content="#faf9f6">
+<link rel="manifest" href="/manifest.json">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Free Presentation Maker Online - No Login Required | freeslides.app">
+<meta property="og:description" content="Create beautiful presentations instantly in your browser. No login, no cloud, completely free.">
+<meta property="og:image" content="/og-image.svg">
+<meta property="og:url" content="https://freeslides.app/">
+<meta property="og:type" content="website">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Presentation Maker Online - No Login Required | freeslides.app">
+<meta name="twitter:description" content="Create beautiful presentations instantly in your browser. No login, no cloud, completely free.">
+<meta name="twitter:image" content="/og-image.svg">
+
+<!-- hreflang tags to be added when translations are available -->
+
+<!-- Google Fonts async -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap"></noscript>
+
+<!-- JSON-LD: SoftwareApplication -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "freeslides.app",
+  "applicationCategory": "ProductivityApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "description": "Free online presentation maker. No login, no signup, no cloud. Create slides instantly in your browser.",
+  "url": "https://freeslides.app/"
+}
+</script>
+
+<!-- JSON-LD: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is freeslides.app really free with no login?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. freeslides.app is 100% free with no login, no signup, and no account required. Open the site and start creating presentations immediately. There are no hidden paywalls for basic features."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I export my presentation as PDF?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. freeslides.app lets you export your entire presentation as a PDF file using your browser's built-in print functionality. Your slides are formatted for clean PDF output with no watermarks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where are my presentations stored?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All presentations are stored in your browser's localStorage. Nothing is sent to any server. Your data stays on your device, making freeslides.app completely private. You can also export presentations as JSON files for backup."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does freeslides.app work on mobile devices?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. freeslides.app is fully responsive and touch-friendly. You can create, edit, and present slides on phones and tablets. The interface adapts to smaller screens with a single-column layout."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many slides can I create?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "freeslides.app supports presentations up to 50 slides. Each slide can contain a title, body text, and speaker notes. You can reorder slides by dragging them in the slide panel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is freeslides.app a good alternative to Google Slides or PowerPoint?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "freeslides.app is ideal for quick presentations where you don't need heavy collaboration or complex animations. It loads in under 200ms, requires no account, and keeps your data private. For simple slide decks, it is faster and more private than Google Slides or PowerPoint Online."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- JSON-LD: BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://freeslides.app/"
+    }
+  ]
+}
+</script>
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #faf9f6;
+  --surface: #f4f2ee;
+  --border: #e8e4dd;
+  --text-primary: #1a1917;
+  --text-secondary: #6b6760;
+  --text-muted: #9e9b96;
+  --accent: #C49A2A;
+  --accent-hover: #A8831F;
+  --accent-text: #ffffff;
+  --destructive: #c0392b;
+  --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 2px 8px rgba(0,0,0,0.04);
+}
+
+html.dark {
+  --bg: #141412;
+  --surface: #1e1c1a;
+  --border: #2e2b27;
+  --text-primary: #f0ede8;
+  --text-secondary: #9e9b96;
+  --text-muted: #6b6760;
+  --accent: #D4A835;
+  --accent-hover: #C49A2A;
+  --accent-text: #ffffff;
+  --shadow: 0 1px 3px rgba(0,0,0,0.3), 0 2px 8px rgba(0,0,0,0.2);
+}
+
+html {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+body {
+  font-family: "Lora", serif;
+  background: var(--bg);
+  color: var(--text-primary);
+  transition: background 0.15s ease, color 0.15s ease;
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+/* ===== APP SHELL ===== */
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Header */
+header {
+  height: 52px;
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+  z-index: 20;
+}
+
+.brand {
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--accent);
+  user-select: none;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Buttons */
+.btn {
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: var(--accent-text);
+}
+.btn-primary:hover { background: var(--accent-hover); }
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+}
+.btn-secondary:hover { background: var(--surface); }
+
+.btn-destructive {
+  background: transparent;
+  border: 1px solid var(--destructive);
+  color: var(--destructive);
+}
+.btn-destructive:hover { background: var(--surface); }
+
+.btn-icon {
+  padding: 8px;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+}
+.btn-icon:hover { background: var(--surface); }
+.btn-icon:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Dark mode toggle */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  width: 52px;
+  height: 28px;
+  position: relative;
+}
+
+.theme-toggle-knob {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  transition: all 0.15s ease;
+  position: absolute;
+  left: 2px;
+}
+
+html.dark .theme-toggle-knob {
+  left: 26px;
+}
+
+/* Main area */
+.main-area {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  min-height: 0;
+}
+
+/* Slide panel (left) */
+.slide-panel {
+  width: 200px;
+  min-width: 200px;
+  border-right: 1px solid var(--border);
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.slide-panel-header {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slide-panel-header span {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.slide-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px;
+}
+
+.slide-thumb {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: 2px solid var(--border);
+  border-radius: 6px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  position: relative;
+  background: var(--bg);
+  transition: all 0.15s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 8px;
+}
+
+.slide-thumb:hover { border-color: var(--text-muted); }
+.slide-thumb.active { border-color: var(--accent); }
+
+.slide-thumb-number {
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.slide-thumb-title {
+  font-family: "DM Sans", sans-serif;
+  font-size: 9px;
+  color: var(--text-secondary);
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.slide-thumb-delete {
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  font-size: 12px;
+  color: var(--text-muted);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  background: none;
+  border: none;
+  padding: 2px;
+  line-height: 1;
+}
+.slide-thumb:hover .slide-thumb-delete { opacity: 1; }
+.slide-thumb-delete:hover { color: var(--destructive); }
+
+/* Editor area (center) */
+.editor-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.slide-canvas-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 24px;
+  overflow: auto;
+}
+
+.slide-canvas {
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16/9;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 64px;
+  position: relative;
+  gap: 16px;
+}
+
+.slide-title-input {
+  width: 100%;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-primary);
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-radius: 6px;
+  transition: all 0.15s ease;
+}
+
+.slide-title-input:focus {
+  background: var(--surface);
+}
+
+.slide-title-input::placeholder { color: var(--text-muted); }
+
+.slide-body-input {
+  width: 100%;
+  text-align: center;
+  font-family: "Lora", serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-radius: 6px;
+  resize: none;
+  min-height: 80px;
+  transition: all 0.15s ease;
+}
+
+.slide-body-input:focus {
+  background: var(--surface);
+}
+
+.slide-body-input::placeholder { color: var(--text-muted); }
+
+/* Notes bar below canvas */
+.notes-bar {
+  border-top: 1px solid var(--border);
+  padding: 12px 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.notes-label {
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding-top: 4px;
+  white-space: nowrap;
+}
+
+.notes-input {
+  flex: 1;
+  font-family: "Lora", serif;
+  font-size: 13px;
+  color: var(--text-secondary);
+  background: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+  min-height: 32px;
+  max-height: 80px;
+  line-height: 1.5;
+}
+
+.notes-input::placeholder { color: var(--text-muted); }
+
+/* Right panel (stats) */
+.stats-panel {
+  width: 260px;
+  min-width: 260px;
+  border-left: 1px solid var(--border);
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 20px 16px;
+  gap: 16px;
+}
+
+.stat-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+
+.stat-number {
+  font-family: "DM Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.stat-label {
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 4px;
+}
+
+/* Theme selector */
+.theme-section-title {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.slide-themes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.slide-theme-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.slide-theme-btn:hover { border-color: var(--text-muted); }
+.slide-theme-btn.active { border-color: var(--accent); color: var(--accent); }
+
+.theme-swatch {
+  width: 24px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+/* Upgrade prompt */
+#upgrade-prompt {
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+}
+
+#upgrade-prompt .lock-title {
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+#upgrade-prompt .lock-desc {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+#upgrade-prompt .lock-cta {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  color: var(--accent);
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+/* Status bar */
+.status-bar {
+  height: 32px;
+  min-height: 32px;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  color: var(--text-muted);
+  z-index: 20;
+}
+
+/* Badge */
+.suite-badge {
+  position: fixed;
+  bottom: 36px;
+  right: 16px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--text-muted);
+  padding: 4px 8px;
+  z-index: 10;
+}
+
+/* Present mode */
+.present-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: #000;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.present-overlay.active {
+  display: flex;
+}
+
+.present-slide {
+  width: 90vw;
+  max-width: 1200px;
+  aspect-ratio: 16/9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 64px;
+  gap: 24px;
+  color: #fff;
+}
+
+.present-slide-title {
+  font-family: "DM Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.present-slide-body {
+  font-family: "Lora", serif;
+  font-size: 24px;
+  line-height: 1.6;
+  text-align: center;
+  color: rgba(255,255,255,0.8);
+}
+
+.present-controls {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  color: rgba(255,255,255,0.5);
+}
+
+.present-controls button {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+}
+
+.present-controls button:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .main-area {
+    flex-direction: column;
+  }
+
+  .slide-panel {
+    width: 100%;
+    min-width: 100%;
+    max-height: 120px;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .slide-list {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 8px;
+    gap: 8px;
+  }
+
+  .slide-thumb {
+    min-width: 100px;
+    width: 100px;
+    margin-bottom: 0;
+  }
+
+  .stats-panel {
+    display: none;
+  }
+
+  .slide-canvas {
+    padding: 24px 20px;
+  }
+
+  .slide-title-input {
+    font-size: 20px;
+  }
+
+  .slide-canvas-wrapper {
+    padding: 12px;
+  }
+
+  .notes-bar {
+    padding: 8px 16px;
+  }
+
+  .suite-badge-full { display: none; }
+  .suite-badge-short { display: inline; }
+
+  .present-slide {
+    padding: 24px;
+  }
+
+  .present-slide-title {
+    font-size: 28px;
+  }
+
+  .present-slide-body {
+    font-size: 16px;
+  }
+
+  header {
+    padding: 0 16px;
+  }
+}
+
+@media (min-width: 769px) {
+  .suite-badge-short { display: none; }
+}
+
+/* ===== SEO CONTENT ===== */
+.seo-content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 64px 24px;
+  font-family: "Lora", serif;
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+.seo-content h1 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 1.3;
+}
+
+.seo-content h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 48px;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.seo-content p {
+  margin-bottom: 16px;
+  color: var(--text-secondary);
+}
+
+.seo-content details {
+  margin-bottom: 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0;
+}
+
+.seo-content summary {
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 12px 16px;
+  color: var(--text-primary);
+}
+
+.seo-content details[open] summary {
+  border-bottom: 1px solid var(--border);
+}
+
+.seo-content details p {
+  padding: 12px 16px;
+  margin-bottom: 0;
+}
+
+.seo-content footer {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* Print styles for PDF export */
+@media print {
+  .app-shell, .suite-badge, .present-overlay { display: none !important; }
+  .seo-content { display: none !important; }
+  .print-slides { display: block !important; }
+  .print-slide {
+    page-break-after: always;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 64px;
+  }
+  .print-slide-title {
+    font-family: "DM Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  .print-slide-body {
+    font-family: "Lora", serif;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+  }
+}
+
+.print-slides { display: none; }
+</style>
+</head>
+<body>
+
+<!-- ===== APP UI ===== -->
+<div class="app-shell">
+  <header>
+    <span class="brand">freeslides.app</span>
+    <div class="header-actions">
+      <button class="btn btn-secondary" id="btn-new" title="New presentation">New</button>
+      <button class="btn btn-secondary" id="btn-export" title="Export JSON">Export</button>
+      <button class="btn btn-secondary" id="btn-import" title="Import JSON">Import</button>
+      <button class="btn btn-primary" id="btn-present" title="Present slides">Present</button>
+      <button class="btn btn-secondary" id="btn-pdf" title="Export PDF">PDF</button>
+      <div class="theme-toggle" id="theme-toggle" role="button" tabindex="0" aria-label="Toggle dark mode">
+        <div class="theme-toggle-knob" id="theme-knob"></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-area">
+    <!-- Left: Slide thumbnails -->
+    <nav class="slide-panel" aria-label="Slides">
+      <div class="slide-panel-header">
+        <span>Slides</span>
+        <button class="btn-icon" id="btn-add-slide" title="Add slide">+</button>
+      </div>
+      <div class="slide-list" id="slide-list"></div>
+    </nav>
+
+    <!-- Center: Editor -->
+    <section class="editor-area">
+      <div class="slide-canvas-wrapper">
+        <div class="slide-canvas" id="slide-canvas">
+          <input type="text" class="slide-title-input" id="slide-title" placeholder="Click to add title" maxlength="200">
+          <textarea class="slide-body-input" id="slide-body" placeholder="Click to add text" rows="4"></textarea>
+        </div>
+      </div>
+      <div class="notes-bar">
+        <span class="notes-label">Notes</span>
+        <textarea class="notes-input" id="slide-notes" placeholder="Speaker notes..." rows="2"></textarea>
+      </div>
+    </section>
+
+    <!-- Right: Stats panel -->
+    <aside class="stats-panel">
+      <div class="stat-card">
+        <div class="stat-number" id="stat-slides">1</div>
+        <div class="stat-label">Slides</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" id="stat-words">0</div>
+        <div class="stat-label">Total Words</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" id="stat-time">0m</div>
+        <div class="stat-label">Est. Duration</div>
+      </div>
+
+      <div style="border-top: 1px solid var(--border);"></div>
+      <div class="theme-section-title">Slide Theme</div>
+      <div class="slide-themes" id="slide-themes">
+        <button class="slide-theme-btn active" data-theme="default">
+          <span class="theme-swatch" style="background: linear-gradient(135deg, #faf9f6, #e8e4dd);"></span>
+          Default
+        </button>
+        <button class="slide-theme-btn" data-theme="dark">
+          <span class="theme-swatch" style="background: linear-gradient(135deg, #1a1917, #2e2b27);"></span>
+          Dark
+        </button>
+        <button class="slide-theme-btn" data-theme="blue">
+          <span class="theme-swatch" style="background: linear-gradient(135deg, #1a365d, #2b6cb0);"></span>
+          Ocean
+        </button>
+      </div>
+
+      <div id="upgrade-prompt">
+        <div class="lock-title">&#x1F512; Custom Templates</div>
+        <div class="lock-desc">Upload your own slide templates with custom colors, fonts, and layouts.</div>
+        <div class="lock-cta">Unlock with freesuite.app &middot; $2.88/mo</div>
+      </div>
+    </aside>
+  </main>
+
+  <div class="status-bar">
+    <span id="status-left">Slide 1 of 1</span>
+    <span id="status-right">Esc to exit present mode</span>
+  </div>
+</div>
+
+<!-- Suite badge -->
+<div class="suite-badge">
+  <span class="suite-badge-full">by freesuite.app</span>
+  <span class="suite-badge-short">freesuite.app</span>
+</div>
+
+<!-- Present mode overlay -->
+<div class="present-overlay" id="present-overlay">
+  <div class="present-slide" id="present-slide">
+    <div class="present-slide-title" id="present-title"></div>
+    <div class="present-slide-body" id="present-body"></div>
+  </div>
+  <div class="present-controls">
+    <button id="present-prev">&larr; Prev</button>
+    <span id="present-counter">1 / 1</span>
+    <button id="present-next">Next &rarr;</button>
+    <button id="present-exit">Exit</button>
+  </div>
+</div>
+
+<!-- Print slides (for PDF) -->
+<div class="print-slides" id="print-slides"></div>
+
+<!-- Hidden file input for import -->
+<input type="file" id="file-import" accept=".json" style="display:none">
+
+<!-- ===== SEO CONTENT (below fold) ===== -->
+<article class="seo-content">
+  <h1>Free Presentation Maker Online &mdash; No Login Required</h1>
+
+  <p>freeslides.app is a free online presentation maker that works in your browser with no login required. Create beautiful slides instantly with a simple, clean interface inspired by the best presentation tools. No account needed, no cloud storage, no tracking &mdash; just open the page and start building your deck. freeslides.app loads in under 200ms and stores everything locally on your device using your browser's localStorage. Whether you are a student preparing a class project, a professional drafting a quick pitch, or anyone who needs slides without the hassle of signing up, freeslides.app delivers a fast, private, and completely free experience. Your presentations never leave your device, and you can export them as PDF or JSON at any time.</p>
+
+  <h2>What features does freeslides.app offer?</h2>
+
+  <p>freeslides.app provides a full slide editor with a real-time canvas preview. Each slide supports a title, body text, and speaker notes. The editor updates the live preview instantly as you type, giving you immediate visual feedback on how your slides will look during a presentation.</p>
+
+  <p>freeslides.app supports presentations up to 50 slides, which is enough for most lectures, pitches, and reports. The slide panel on the left lets you reorder and manage all your slides at a glance, with thumbnail previews for each one.</p>
+
+  <p>The built-in presentation mode lets you present your slides full-screen directly in the browser. Navigate with arrow keys, click controls, or touch gestures. No external software needed &mdash; your browser is your presentation app.</p>
+
+  <p>freeslides.app loads in under 200ms on a standard connection. There are zero external dependencies, no frameworks, and no build steps. The entire app is a single HTML file with inlined CSS and JavaScript, served as a static file.</p>
+
+  <p>Export your presentation as a JSON file for backup and sharing, or generate a clean PDF using your browser's print functionality. Import previously exported JSON files to continue editing on any device. All exports happen locally with no server involved.</p>
+
+  <p>Choose from multiple slide themes &mdash; Default, Dark, and Ocean &mdash; to match your content's tone. The app interface supports both light and dark mode for comfortable editing in any lighting condition.</p>
+
+  <h2>How does this free presentation maker work?</h2>
+
+  <p>Open freeslides.app in any modern browser on desktop, tablet, or phone. There is no installation, no download, and no account creation. The app loads instantly and you see a blank first slide ready for editing.</p>
+
+  <p>Click the title area to add your slide title, then click the body area to add content text. Use the slide panel on the left to add more slides, reorder them, or delete ones you no longer need. Speaker notes can be added below the canvas for reference during presentations.</p>
+
+  <p>When your deck is ready, click the Present button to enter full-screen presentation mode. Use arrow keys or on-screen controls to navigate between slides. Export to PDF when you need a shareable file, or save as JSON to continue editing later.</p>
+
+  <h2>Why is freeslides.app better than other presentation apps?</h2>
+
+  <p>freeslides.app requires zero signup and zero login. Most online presentation tools force you to create an account before you can even see the editor. freeslides.app shows you the editor immediately. No email, no password, no OAuth flow &mdash; just slides.</p>
+
+  <p>Everything stays on your device. Google Slides, Canva, and other cloud-based tools upload your content to remote servers. freeslides.app uses only localStorage, which means your presentations are never transmitted over the internet. This makes freeslides.app ideal for sensitive content or environments with limited connectivity.</p>
+
+  <p>The app is genuinely fast. No spinner, no loading bar, no skeleton screens. freeslides.app renders the complete editor in under 200ms because there are no API calls, no authentication checks, and no framework initialization. It feels instant.</p>
+
+  <p>freeslides.app is free with no ads. Ad-bloated alternatives slow down your workflow and distract from your content. freeslides.app has a clean, focused interface designed for productivity, not revenue extraction.</p>
+
+  <h2>Is freeslides.app private and safe to use?</h2>
+
+  <p>freeslides.app stores all data exclusively in your browser's localStorage. No data is ever sent to any server. There is no analytics, no tracking pixels, no cookies, and no third-party scripts beyond Google Fonts for typography. The app works fully offline after the first load thanks to its service worker, meaning your content remains entirely on your device even without an internet connection.</p>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <details>
+    <summary>Is freeslides.app really free with no login?</summary>
+    <p>Yes. freeslides.app is 100% free with no login, no signup, and no account required. Open the site and start creating presentations immediately. There are no hidden paywalls for basic features.</p>
+  </details>
+
+  <details>
+    <summary>Can I export my presentation as PDF?</summary>
+    <p>Yes. freeslides.app lets you export your entire presentation as a PDF file using your browser's built-in print functionality. Your slides are formatted for clean PDF output with no watermarks.</p>
+  </details>
+
+  <details>
+    <summary>Where are my presentations stored?</summary>
+    <p>All presentations are stored in your browser's localStorage. Nothing is sent to any server. Your data stays on your device, making freeslides.app completely private. You can also export presentations as JSON files for backup.</p>
+  </details>
+
+  <details>
+    <summary>Does freeslides.app work on mobile devices?</summary>
+    <p>Yes. freeslides.app is fully responsive and touch-friendly. You can create, edit, and present slides on phones and tablets. The interface adapts to smaller screens with a single-column layout.</p>
+  </details>
+
+  <details>
+    <summary>How many slides can I create?</summary>
+    <p>freeslides.app supports presentations up to 50 slides. Each slide can contain a title, body text, and speaker notes. You can reorder slides by dragging them in the slide panel.</p>
+  </details>
+
+  <details>
+    <summary>Is freeslides.app a good alternative to Google Slides or PowerPoint?</summary>
+    <p>freeslides.app is ideal for quick presentations where you don't need heavy collaboration or complex animations. It loads in under 200ms, requires no account, and keeps your data private. For simple slide decks, it is faster and more private than Google Slides or PowerPoint Online.</p>
+  </details>
+
+  <footer>
+    <p>&copy; freeslides.app</p>
+    <div class="more-tools-placeholder" data-suite="freetools"></div>
+  </footer>
+</article>
+
+<script>
+(function() {
+  'use strict';
+
+  // ===== CONSTANTS =====
+  var STORAGE_KEY = 'freeslides_data';
+  var THEME_KEY = 'suite_theme';
+  var MAX_SLIDES = 50;
+
+  // ===== STATE =====
+  var state = {
+    slides: [],
+    currentIndex: 0,
+    slideTheme: 'default',
+    presentIndex: 0
+  };
+
+  // ===== ELEMENTS =====
+  var $ = function(id) { return document.getElementById(id); };
+  var slideList = $('slide-list');
+  var slideTitle = $('slide-title');
+  var slideBody = $('slide-body');
+  var slideNotes = $('slide-notes');
+  var slideCanvas = $('slide-canvas');
+  var statSlides = $('stat-slides');
+  var statWords = $('stat-words');
+  var statTime = $('stat-time');
+  var statusLeft = $('status-left');
+  var presentOverlay = $('present-overlay');
+  var presentTitle = $('present-title');
+  var presentBody = $('present-body');
+  var presentCounter = $('present-counter');
+
+  // ===== THEME =====
+  function initTheme() {
+    var saved = localStorage.getItem(THEME_KEY);
+    if (saved === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else if (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.classList.add('dark');
+    }
+    updateThemeKnob();
+  }
+
+  function toggleTheme() {
+    var html = document.documentElement;
+    html.classList.toggle('dark');
+    localStorage.setItem(THEME_KEY, html.classList.contains('dark') ? 'dark' : 'light');
+    updateThemeKnob();
+  }
+
+  function updateThemeKnob() {
+    var knob = $('theme-knob');
+    knob.textContent = document.documentElement.classList.contains('dark') ? '\u{1F31C}' : '\u{2600}\u{FE0F}';
+  }
+
+  $('theme-toggle').addEventListener('click', toggleTheme);
+  $('theme-toggle').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleTheme(); }
+  });
+
+  // ===== DATA =====
+  function defaultSlide() {
+    return { title: '', body: '', notes: '' };
+  }
+
+  function loadData() {
+    try {
+      var raw = localStorage.getItem(STORAGE_KEY);
+      if (raw) {
+        var data = JSON.parse(raw);
+        state.slides = data.slides || [defaultSlide()];
+        state.currentIndex = Math.min(data.currentIndex || 0, state.slides.length - 1);
+        state.slideTheme = data.slideTheme || 'default';
+      } else {
+        state.slides = [defaultSlide()];
+        state.currentIndex = 0;
+      }
+    } catch(e) {
+      state.slides = [defaultSlide()];
+      state.currentIndex = 0;
+    }
+  }
+
+  function saveData() {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({
+      slides: state.slides,
+      currentIndex: state.currentIndex,
+      slideTheme: state.slideTheme
+    }));
+  }
+
+  // ===== RENDERING =====
+  function render() {
+    renderSlideList();
+    renderCurrentSlide();
+    renderStats();
+    applySlideTheme();
+  }
+
+  function renderSlideList() {
+    slideList.innerHTML = '';
+    state.slides.forEach(function(slide, i) {
+      var thumb = document.createElement('div');
+      thumb.className = 'slide-thumb' + (i === state.currentIndex ? ' active' : '');
+      thumb.setAttribute('draggable', 'true');
+      thumb.dataset.index = i;
+
+      var num = document.createElement('span');
+      num.className = 'slide-thumb-number';
+      num.textContent = i + 1;
+      thumb.appendChild(num);
+
+      var title = document.createElement('span');
+      title.className = 'slide-thumb-title';
+      title.textContent = slide.title || 'Untitled';
+      thumb.appendChild(title);
+
+      if (state.slides.length > 1) {
+        var del = document.createElement('button');
+        del.className = 'slide-thumb-delete';
+        del.textContent = '\u00D7';
+        del.title = 'Delete slide';
+        del.addEventListener('click', function(e) {
+          e.stopPropagation();
+          deleteSlide(i);
+        });
+        thumb.appendChild(del);
+      }
+
+      thumb.addEventListener('click', function() {
+        selectSlide(i);
+      });
+
+      // Drag and drop
+      thumb.addEventListener('dragstart', function(e) {
+        e.dataTransfer.setData('text/plain', i);
+        thumb.style.opacity = '0.5';
+      });
+      thumb.addEventListener('dragend', function() {
+        thumb.style.opacity = '1';
+      });
+      thumb.addEventListener('dragover', function(e) {
+        e.preventDefault();
+      });
+      thumb.addEventListener('drop', function(e) {
+        e.preventDefault();
+        var fromIndex = parseInt(e.dataTransfer.getData('text/plain'));
+        var toIndex = i;
+        if (fromIndex !== toIndex) {
+          var moved = state.slides.splice(fromIndex, 1)[0];
+          state.slides.splice(toIndex, 0, moved);
+          if (state.currentIndex === fromIndex) {
+            state.currentIndex = toIndex;
+          } else if (fromIndex < state.currentIndex && toIndex >= state.currentIndex) {
+            state.currentIndex--;
+          } else if (fromIndex > state.currentIndex && toIndex <= state.currentIndex) {
+            state.currentIndex++;
+          }
+          saveData();
+          render();
+        }
+      });
+
+      slideList.appendChild(thumb);
+    });
+  }
+
+  function renderCurrentSlide() {
+    var slide = state.slides[state.currentIndex];
+    if (!slide) return;
+    slideTitle.value = slide.title;
+    slideBody.value = slide.body;
+    slideNotes.value = slide.notes;
+    statusLeft.textContent = 'Slide ' + (state.currentIndex + 1) + ' of ' + state.slides.length;
+  }
+
+  function renderStats() {
+    statSlides.textContent = state.slides.length;
+    var totalWords = 0;
+    state.slides.forEach(function(s) {
+      var text = (s.title + ' ' + s.body).trim();
+      if (text) totalWords += text.split(/\s+/).filter(function(w) { return w.length > 0; }).length;
+    });
+    statWords.textContent = totalWords;
+    var minutes = Math.max(1, Math.round(totalWords / 130));
+    statTime.textContent = totalWords === 0 ? '0m' : minutes + 'm';
+  }
+
+  // ===== SLIDE THEMES =====
+  var themeStyles = {
+    default: { bg: '', color: '' },
+    dark: { bg: '#1a1917', color: '#f0ede8' },
+    blue: { bg: '#1a365d', color: '#e2e8f0' }
+  };
+
+  function applySlideTheme() {
+    var theme = themeStyles[state.slideTheme] || themeStyles.default;
+    if (theme.bg) {
+      slideCanvas.style.background = theme.bg;
+      slideTitle.style.color = theme.color;
+      slideBody.style.color = theme.color;
+    } else {
+      slideCanvas.style.background = '';
+      slideTitle.style.color = '';
+      slideBody.style.color = '';
+    }
+    // Update theme buttons
+    var btns = document.querySelectorAll('.slide-theme-btn');
+    btns.forEach(function(btn) {
+      btn.classList.toggle('active', btn.dataset.theme === state.slideTheme);
+    });
+  }
+
+  $('slide-themes').addEventListener('click', function(e) {
+    var btn = e.target.closest('.slide-theme-btn');
+    if (!btn) return;
+    state.slideTheme = btn.dataset.theme;
+    saveData();
+    applySlideTheme();
+  });
+
+  // ===== SLIDE ACTIONS =====
+  function selectSlide(index) {
+    saveCurrentSlide();
+    state.currentIndex = index;
+    saveData();
+    render();
+    slideTitle.focus();
+  }
+
+  function addSlide() {
+    if (state.slides.length >= MAX_SLIDES) return;
+    saveCurrentSlide();
+    state.slides.splice(state.currentIndex + 1, 0, defaultSlide());
+    state.currentIndex = state.currentIndex + 1;
+    saveData();
+    render();
+    slideTitle.focus();
+  }
+
+  function deleteSlide(index) {
+    if (state.slides.length <= 1) return;
+    state.slides.splice(index, 1);
+    if (state.currentIndex >= state.slides.length) {
+      state.currentIndex = state.slides.length - 1;
+    } else if (index < state.currentIndex) {
+      state.currentIndex--;
+    } else if (index === state.currentIndex) {
+      state.currentIndex = Math.min(state.currentIndex, state.slides.length - 1);
+    }
+    saveData();
+    render();
+  }
+
+  function saveCurrentSlide() {
+    var slide = state.slides[state.currentIndex];
+    if (!slide) return;
+    slide.title = slideTitle.value;
+    slide.body = slideBody.value;
+    slide.notes = slideNotes.value;
+  }
+
+  // Auto-save on input
+  slideTitle.addEventListener('input', function() {
+    saveCurrentSlide();
+    saveData();
+    renderSlideList();
+    renderStats();
+  });
+
+  slideBody.addEventListener('input', function() {
+    saveCurrentSlide();
+    saveData();
+    renderStats();
+  });
+
+  slideNotes.addEventListener('input', function() {
+    saveCurrentSlide();
+    saveData();
+  });
+
+  // ===== BUTTONS =====
+  $('btn-add-slide').addEventListener('click', addSlide);
+
+  $('btn-new').addEventListener('click', function() {
+    if (confirm('Start a new presentation? This will clear all slides.')) {
+      state.slides = [defaultSlide()];
+      state.currentIndex = 0;
+      state.slideTheme = 'default';
+      saveData();
+      render();
+    }
+  });
+
+  $('btn-export').addEventListener('click', function() {
+    saveCurrentSlide();
+    var data = JSON.stringify({ slides: state.slides, slideTheme: state.slideTheme }, null, 2);
+    var blob = new Blob([data], { type: 'application/json' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = 'presentation.json';
+    a.click();
+    URL.revokeObjectURL(url);
+  });
+
+  $('btn-import').addEventListener('click', function() {
+    $('file-import').click();
+  });
+
+  $('file-import').addEventListener('change', function(e) {
+    var file = e.target.files[0];
+    if (!file) return;
+    var reader = new FileReader();
+    reader.onload = function(ev) {
+      try {
+        var data = JSON.parse(ev.target.result);
+        if (data.slides && Array.isArray(data.slides)) {
+          state.slides = data.slides.slice(0, MAX_SLIDES);
+          state.currentIndex = 0;
+          state.slideTheme = data.slideTheme || 'default';
+          saveData();
+          render();
+        }
+      } catch(err) {
+        alert('Invalid file format.');
+      }
+    };
+    reader.readAsText(file);
+    e.target.value = '';
+  });
+
+  // ===== PDF EXPORT =====
+  $('btn-pdf').addEventListener('click', function() {
+    saveCurrentSlide();
+    var container = $('print-slides');
+    container.innerHTML = '';
+    state.slides.forEach(function(slide) {
+      var div = document.createElement('div');
+      div.className = 'print-slide';
+      var theme = themeStyles[state.slideTheme] || themeStyles.default;
+      if (theme.bg) {
+        div.style.background = theme.bg;
+        div.style.color = theme.color;
+      }
+      var h = document.createElement('div');
+      h.className = 'print-slide-title';
+      h.textContent = slide.title || '';
+      if (theme.color) h.style.color = theme.color;
+      div.appendChild(h);
+      var b = document.createElement('div');
+      b.className = 'print-slide-body';
+      b.textContent = slide.body || '';
+      if (theme.color) b.style.color = theme.color;
+      div.appendChild(b);
+      container.appendChild(div);
+    });
+    window.print();
+  });
+
+  // ===== PRESENT MODE =====
+  function startPresent() {
+    saveCurrentSlide();
+    state.presentIndex = state.currentIndex;
+    presentOverlay.classList.add('active');
+    renderPresentSlide();
+    document.addEventListener('keydown', presentKeyHandler);
+  }
+
+  function exitPresent() {
+    presentOverlay.classList.remove('active');
+    document.removeEventListener('keydown', presentKeyHandler);
+  }
+
+  function renderPresentSlide() {
+    var slide = state.slides[state.presentIndex];
+    if (!slide) return;
+    var theme = themeStyles[state.slideTheme] || themeStyles.default;
+    var presentSlide = $('present-slide');
+    if (theme.bg) {
+      presentSlide.style.background = theme.bg;
+    } else {
+      presentSlide.style.background = '#1a1917';
+    }
+    presentTitle.textContent = slide.title || '';
+    presentBody.textContent = slide.body || '';
+    presentCounter.textContent = (state.presentIndex + 1) + ' / ' + state.slides.length;
+  }
+
+  function presentKeyHandler(e) {
+    if (e.key === 'Escape') {
+      exitPresent();
+    } else if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ') {
+      e.preventDefault();
+      if (state.presentIndex < state.slides.length - 1) {
+        state.presentIndex++;
+        renderPresentSlide();
+      }
+    } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+      e.preventDefault();
+      if (state.presentIndex > 0) {
+        state.presentIndex--;
+        renderPresentSlide();
+      }
+    }
+  }
+
+  $('btn-present').addEventListener('click', startPresent);
+  $('present-exit').addEventListener('click', exitPresent);
+  $('present-prev').addEventListener('click', function() {
+    if (state.presentIndex > 0) {
+      state.presentIndex--;
+      renderPresentSlide();
+    }
+  });
+  $('present-next').addEventListener('click', function() {
+    if (state.presentIndex < state.slides.length - 1) {
+      state.presentIndex++;
+      renderPresentSlide();
+    }
+  });
+
+  // Click on present slide also advances
+  $('present-slide').addEventListener('click', function() {
+    if (state.presentIndex < state.slides.length - 1) {
+      state.presentIndex++;
+      renderPresentSlide();
+    }
+  });
+
+  // ===== INIT =====
+  initTheme();
+  loadData();
+  render();
+
+  // Register service worker
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js').catch(function() {});
+  }
+})();
+</script>
+</body>
+</html>

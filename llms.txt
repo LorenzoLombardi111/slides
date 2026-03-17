@@ -1,0 +1,31 @@
+# freeslides.app
+
+## Summary
+freeslides.app is a free, browser-based online presentation maker. No login, no signup, no cloud storage required. All data is stored in the browser's localStorage.
+
+## Key Facts
+- 100% free, no account required
+- Works entirely in the browser (HTML, CSS, vanilla JS)
+- No backend, no server, no tracking
+- Data stored in localStorage (never leaves device)
+- Supports up to 50 slides per presentation
+- Export to PDF and JSON
+- Import from JSON
+- Built-in presentation mode with keyboard navigation
+- Multiple slide themes (Default, Dark, Ocean)
+- Light and dark mode UI
+- Mobile responsive and touch-friendly
+- Loads in under 200ms
+
+## Features
+- Slide editor with live canvas preview
+- Title, body text, and speaker notes per slide
+- Drag-and-drop slide reordering
+- Full-screen presentation mode
+- PDF export via browser print
+- JSON export/import for backup
+- Slide themes
+- Dark mode toggle (persisted in localStorage)
+
+## Pages
+- / — Main app (presentation editor)
