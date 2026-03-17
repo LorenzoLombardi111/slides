@@ -28,8 +28,8 @@
 <!-- Google Fonts async -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap"></noscript>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Merriweather:wght@400;700&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&family=PT+Serif:wght@400;700&family=Raleway:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Merriweather:wght@400;700&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&family=PT+Serif:wght@400;700&family=Raleway:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap"></noscript>
 
 <!-- JSON-LD: SoftwareApplication -->
 <script type="application/ld+json">
@@ -597,6 +597,52 @@ html.dark .theme-toggle-knob {
   border: 1px solid var(--border);
 }
 
+/* Font selectors */
+.font-select {
+  width: 100%;
+  padding: 8px 12px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  color: var(--text-primary);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%239e9b96'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 32px;
+}
+
+.font-select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(196,154,42,0.12);
+}
+
+.font-select-label {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.font-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.font-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
 /* Upgrade prompt */
 #upgrade-prompt {
   border-top: 1px solid var(--border);
@@ -971,6 +1017,45 @@ html.dark .theme-toggle-knob {
         </button>
       </div>
 
+      <div style="border-top: 1px solid var(--border);"></div>
+      <div class="theme-section-title">Fonts</div>
+      <div class="font-section">
+        <div class="font-field">
+          <label class="font-select-label" for="font-title">Title Font</label>
+          <select class="font-select" id="font-title">
+            <option value="DM Sans" style="font-family:'DM Sans',sans-serif">DM Sans</option>
+            <option value="Inter" style="font-family:'Inter',sans-serif">Inter</option>
+            <option value="Montserrat" style="font-family:'Montserrat',sans-serif">Montserrat</option>
+            <option value="Raleway" style="font-family:'Raleway',sans-serif">Raleway</option>
+            <option value="Oswald" style="font-family:'Oswald',sans-serif">Oswald</option>
+            <option value="Open Sans" style="font-family:'Open Sans',sans-serif">Open Sans</option>
+            <option value="Source Sans 3" style="font-family:'Source Sans 3',sans-serif">Source Sans 3</option>
+            <option value="Roboto" style="font-family:'Roboto',sans-serif">Roboto</option>
+            <option value="Playfair Display" style="font-family:'Playfair Display',serif">Playfair Display</option>
+            <option value="Lora" style="font-family:'Lora',serif">Lora</option>
+            <option value="Merriweather" style="font-family:'Merriweather',serif">Merriweather</option>
+            <option value="PT Serif" style="font-family:'PT Serif',serif">PT Serif</option>
+          </select>
+        </div>
+        <div class="font-field">
+          <label class="font-select-label" for="font-body">Body Font</label>
+          <select class="font-select" id="font-body">
+            <option value="Lora" style="font-family:'Lora',serif">Lora</option>
+            <option value="Merriweather" style="font-family:'Merriweather',serif">Merriweather</option>
+            <option value="PT Serif" style="font-family:'PT Serif',serif">PT Serif</option>
+            <option value="Playfair Display" style="font-family:'Playfair Display',serif">Playfair Display</option>
+            <option value="DM Sans" style="font-family:'DM Sans',sans-serif">DM Sans</option>
+            <option value="Inter" style="font-family:'Inter',sans-serif">Inter</option>
+            <option value="Montserrat" style="font-family:'Montserrat',sans-serif">Montserrat</option>
+            <option value="Open Sans" style="font-family:'Open Sans',sans-serif">Open Sans</option>
+            <option value="Source Sans 3" style="font-family:'Source Sans 3',sans-serif">Source Sans 3</option>
+            <option value="Roboto" style="font-family:'Roboto',sans-serif">Roboto</option>
+            <option value="Raleway" style="font-family:'Raleway',sans-serif">Raleway</option>
+            <option value="Oswald" style="font-family:'Oswald',sans-serif">Oswald</option>
+          </select>
+        </div>
+      </div>
+
       <div id="upgrade-prompt">
         <div class="lock-title">&#x1F512; Custom Templates</div>
         <div class="lock-desc">Upload your own slide templates with custom colors, fonts, and layouts.</div>
@@ -1105,6 +1190,8 @@ html.dark .theme-toggle-knob {
     slides: [],
     currentIndex: 0,
     slideTheme: 'default',
+    titleFont: 'DM Sans',
+    bodyFont: 'Lora',
     presentIndex: 0
   };
 
@@ -1123,6 +1210,9 @@ html.dark .theme-toggle-knob {
   var presentTitle = $('present-title');
   var presentBody = $('present-body');
   var presentCounter = $('present-counter');
+
+  var fontTitleSelect = $('font-title');
+  var fontBodySelect = $('font-body');
 
   // ===== THEME =====
   function initTheme() {
@@ -1165,6 +1255,8 @@ html.dark .theme-toggle-knob {
         state.slides = data.slides || [defaultSlide()];
         state.currentIndex = Math.min(data.currentIndex || 0, state.slides.length - 1);
         state.slideTheme = data.slideTheme || 'default';
+        state.titleFont = data.titleFont || 'DM Sans';
+        state.bodyFont = data.bodyFont || 'Lora';
       } else {
         state.slides = [defaultSlide()];
         state.currentIndex = 0;
@@ -1179,7 +1271,9 @@ html.dark .theme-toggle-knob {
     localStorage.setItem(STORAGE_KEY, JSON.stringify({
       slides: state.slides,
       currentIndex: state.currentIndex,
-      slideTheme: state.slideTheme
+      slideTheme: state.slideTheme,
+      titleFont: state.titleFont,
+      bodyFont: state.bodyFont
     }));
   }
 
@@ -1189,6 +1283,7 @@ html.dark .theme-toggle-knob {
     renderCurrentSlide();
     renderStats();
     applySlideTheme();
+    applyFonts();
   }
 
   function renderSlideList() {
@@ -1313,6 +1408,43 @@ html.dark .theme-toggle-knob {
     applySlideTheme();
   });
 
+  // ===== FONTS =====
+  var fontFallbacks = {
+    'DM Sans': '"DM Sans", sans-serif',
+    'Inter': '"Inter", sans-serif',
+    'Montserrat': '"Montserrat", sans-serif',
+    'Raleway': '"Raleway", sans-serif',
+    'Oswald': '"Oswald", sans-serif',
+    'Open Sans': '"Open Sans", sans-serif',
+    'Source Sans 3': '"Source Sans 3", sans-serif',
+    'Roboto': '"Roboto", sans-serif',
+    'Playfair Display': '"Playfair Display", serif',
+    'Lora': '"Lora", serif',
+    'Merriweather': '"Merriweather", serif',
+    'PT Serif': '"PT Serif", serif'
+  };
+
+  function applyFonts() {
+    var titleFF = fontFallbacks[state.titleFont] || '"DM Sans", sans-serif';
+    var bodyFF = fontFallbacks[state.bodyFont] || '"Lora", serif';
+    slideTitle.style.fontFamily = titleFF;
+    slideBody.style.fontFamily = bodyFF;
+    fontTitleSelect.value = state.titleFont;
+    fontBodySelect.value = state.bodyFont;
+  }
+
+  fontTitleSelect.addEventListener('change', function() {
+    state.titleFont = fontTitleSelect.value;
+    saveData();
+    applyFonts();
+  });
+
+  fontBodySelect.addEventListener('change', function() {
+    state.bodyFont = fontBodySelect.value;
+    saveData();
+    applyFonts();
+  });
+
   // ===== SLIDE ACTIONS =====
   function selectSlide(index) {
     saveCurrentSlide();
@@ -1381,6 +1513,8 @@ html.dark .theme-toggle-knob {
       state.slides = [defaultSlide()];
       state.currentIndex = 0;
       state.slideTheme = 'default';
+      state.titleFont = 'DM Sans';
+      state.bodyFont = 'Lora';
       saveData();
       render();
     }
@@ -1388,7 +1522,7 @@ html.dark .theme-toggle-knob {
 
   $('btn-export').addEventListener('click', function() {
     saveCurrentSlide();
-    var data = JSON.stringify({ slides: state.slides, slideTheme: state.slideTheme }, null, 2);
+    var data = JSON.stringify({ slides: state.slides, slideTheme: state.slideTheme, titleFont: state.titleFont, bodyFont: state.bodyFont }, null, 2);
     var blob = new Blob([data], { type: 'application/json' });
     var url = URL.createObjectURL(blob);
     var a = document.createElement('a');
@@ -1413,6 +1547,8 @@ html.dark .theme-toggle-knob {
           state.slides = data.slides.slice(0, MAX_SLIDES);
           state.currentIndex = 0;
           state.slideTheme = data.slideTheme || 'default';
+          state.titleFont = data.titleFont || 'DM Sans';
+          state.bodyFont = data.bodyFont || 'Lora';
           saveData();
           render();
         }
@@ -1440,11 +1576,13 @@ html.dark .theme-toggle-knob {
       var h = document.createElement('div');
       h.className = 'print-slide-title';
       h.textContent = slide.title || '';
+      h.style.fontFamily = fontFallbacks[state.titleFont] || '"DM Sans", sans-serif';
       if (theme.color) h.style.color = theme.color;
       div.appendChild(h);
       var b = document.createElement('div');
       b.className = 'print-slide-body';
       b.textContent = slide.body || '';
+      b.style.fontFamily = fontFallbacks[state.bodyFont] || '"Lora", serif';
       if (theme.color) b.style.color = theme.color;
       div.appendChild(b);
       container.appendChild(div);
@@ -1477,7 +1615,9 @@ html.dark .theme-toggle-knob {
       presentSlide.style.background = '#1a1917';
     }
     presentTitle.textContent = slide.title || '';
+    presentTitle.style.fontFamily = fontFallbacks[state.titleFont] || '"DM Sans", sans-serif';
     presentBody.textContent = slide.body || '';
+    presentBody.style.fontFamily = fontFallbacks[state.bodyFont] || '"Lora", serif';
     presentCounter.textContent = (state.presentIndex + 1) + ' / ' + state.slides.length;
   }
 
