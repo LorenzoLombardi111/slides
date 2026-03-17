@@ -1,0 +1,330 @@
+# freeslides.app — Full Content Index
+
+## Page: Home (/)
+
+### Free Presentation Maker Online — No Login Required
+
+freeslides.app is a free online presentation maker that works in your browser with no login required. Create beautiful slides instantly with a simple, clean interface inspired by the best presentation tools. No account needed, no cloud storage, no tracking — just open the page and start building your deck. freeslides.app loads in under 200ms and stores everything locally on your device using your browser's localStorage. Whether you are a student preparing a class project, a professional drafting a quick pitch, or anyone who needs slides without the hassle of signing up, freeslides.app delivers a fast, private, and completely free experience. Your presentations never leave your device, and you can export them as PDF or JSON at any time.
+
+#### What features does freeslides.app offer?
+
+freeslides.app provides a full slide editor with a real-time canvas preview. Each slide supports a title, body text, and speaker notes. The editor updates the live preview instantly as you type, giving you immediate visual feedback on how your slides will look during a presentation.
+
+freeslides.app supports presentations up to 50 slides, which is enough for most lectures, pitches, and reports. The slide panel on the left lets you reorder and manage all your slides at a glance, with thumbnail previews for each one.
+
+The built-in presentation mode lets you present your slides full-screen directly in the browser. Navigate with arrow keys, click controls, or touch gestures. No external software needed — your browser is your presentation app.
+
+freeslides.app loads in under 200ms on a standard connection. There are zero external dependencies, no frameworks, and no build steps. The entire app is a single HTML file with inlined CSS and JavaScript, served as a static file.
+
+Export your presentation as a JSON file for backup and sharing, or generate a clean PDF using your browser's print functionality. Import previously exported JSON files to continue editing on any device. All exports happen locally with no server involved.
+
+Choose from multiple slide themes — Default, Dark, and Ocean — to match your content's tone. The app interface supports both light and dark mode for comfortable editing in any lighting condition.
+
+#### How does this free presentation maker work?
+
+Open freeslides.app in any modern browser on desktop, tablet, or phone. There is no installation, no download, and no account creation. The app loads instantly and you see a blank first slide ready for editing.
+
+Click the title area to add your slide title, then click the body area to add content text. Use the slide panel on the left to add more slides, reorder them, or delete ones you no longer need. Speaker notes can be added below the canvas for reference during presentations.
+
+When your deck is ready, click the Present button to enter full-screen presentation mode. Use arrow keys or on-screen controls to navigate between slides. Export to PDF when you need a shareable file, or save as JSON to continue editing later.
+
+#### Why is freeslides.app better than other presentation apps?
+
+freeslides.app requires zero signup and zero login. Most online presentation tools force you to create an account before you can even see the editor. freeslides.app shows you the editor immediately. No email, no password, no OAuth flow — just slides.
+
+Everything stays on your device. Google Slides, Canva, and other cloud-based tools upload your content to remote servers. freeslides.app uses only localStorage, which means your presentations are never transmitted over the internet. This makes freeslides.app ideal for sensitive content or environments with limited connectivity.
+
+The app is genuinely fast. No spinner, no loading bar, no skeleton screens. freeslides.app renders the complete editor in under 200ms because there are no API calls, no authentication checks, and no framework initialization. It feels instant.
+
+freeslides.app is free with no ads. Ad-bloated alternatives slow down your workflow and distract from your content. freeslides.app has a clean, focused interface designed for productivity, not revenue extraction.
+
+#### Is freeslides.app private and safe to use?
+
+freeslides.app stores all data exclusively in your browser's localStorage. No data is ever sent to any server. There is no analytics, no tracking pixels, no cookies, and no third-party scripts beyond Google Fonts for typography. The app works fully offline after the first load thanks to its service worker, meaning your content remains entirely on your device even without an internet connection.
+
+#### FAQ
+
+**Is freeslides.app really free with no login?**
+Yes. freeslides.app is 100% free with no login, no signup, and no account required. Open the site and start creating presentations immediately. There are no hidden paywalls for basic features.
+
+**Can I export my presentation as PDF?**
+Yes. freeslides.app lets you export your entire presentation as a PDF file using your browser's built-in print functionality. Your slides are formatted for clean PDF output with no watermarks.
+
+**Where are my presentations stored?**
+All presentations are stored in your browser's localStorage. Nothing is sent to any server. Your data stays on your device, making freeslides.app completely private. You can also export presentations as JSON files for backup.
+
+**Does freeslides.app work on mobile devices?**
+Yes. freeslides.app is fully responsive and touch-friendly. You can create, edit, and present slides on phones and tablets. The interface adapts to smaller screens with a single-column layout.
+
+**How many slides can I create?**
+freeslides.app supports presentations up to 50 slides. Each slide can contain a title, body text, and speaker notes. You can reorder slides by dragging them in the slide panel.
+
+**Is freeslides.app a good alternative to Google Slides or PowerPoint?**
+freeslides.app is ideal for quick presentations where you don't need heavy collaboration or complex animations. It loads in under 200ms, requires no account, and keeps your data private. For simple slide decks, it is faster and more private than Google Slides or PowerPoint Online.
+
+---
+
+## Page: freeslides.app vs Google Slides (/vs-google-slides.html)
+
+### freeslides.app vs Google Slides: Free Alternative
+
+freeslides.app is a free online presentation maker that works entirely in your browser with no login and no Google account required. Google Slides is a powerful cloud-based tool with deep collaboration features. Both are free, but they serve different needs. This page offers an honest comparison to help you decide which tool fits your workflow.
+
+#### How does freeslides.app compare to Google Slides?
+
+Google Slides is excellent for teams that need real-time collaboration, commenting, and integration with Google Drive, Gmail, and other Workspace apps. Google Slides supports animations, transitions, embedded videos, and a large template library. These features make it the right choice for collaborative teams and complex presentations.
+
+freeslides.app takes a different approach. It loads instantly in under 200ms, stores everything in your browser's localStorage, and never sends data to any server. There is no account creation, no cloud sync, and no tracking. freeslides.app is designed for individuals who need a quick, private slide deck without the overhead of signing into a Google account or waiting for cloud saves.
+
+| Feature | freeslides.app | Google Slides |
+|---------|---------------|---------------|
+| Price | Free | Free |
+| Login required | No | Yes (Google account) |
+| Cloud storage | No (localStorage only) | Yes (Google Drive) |
+| Real-time collaboration | No | Yes |
+| Animations & transitions | No | Yes |
+| Offline support | Yes (full offline via service worker) | Limited (requires setup) |
+| Privacy | 100% local, no tracking | Data stored on Google servers |
+| Load time | Under 200ms | 2-5 seconds |
+| Templates | 3 slide themes | Extensive template gallery |
+| Export formats | PDF, JSON | PDF, PPTX, ODP, and more |
+| Max slides | 50 | Unlimited |
+| Font selection | 12 Google Fonts | Hundreds of fonts |
+
+#### When should you choose freeslides.app over Google Slides?
+
+freeslides.app is the better choice when you need to create a presentation quickly without signing in to anything. Students working on a shared computer, professionals giving a quick internal pitch, or anyone on a slow connection will benefit from the instant load time and zero-setup experience of freeslides.app.
+
+freeslides.app is also the better option when privacy matters. All data stays on your device. No server ever sees your content. Google Slides stores your presentations on Google's servers, which is fine for most people but not ideal for sensitive or confidential material.
+
+#### When is Google Slides the better choice?
+
+Google Slides is the right tool when you need to collaborate with others in real time. Shared editing, commenting, version history, and integration with Google Meet make Google Slides hard to beat for team workflows. Google Slides also supports complex presentations with animations, speaker notes synced across devices, and embedded YouTube videos.
+
+If you need a large template library, advanced formatting options, or presentations longer than 50 slides, Google Slides is the more capable tool. freeslides.app intentionally keeps things simple and lightweight.
+
+#### FAQ
+
+**Is freeslides.app a good free alternative to Google Slides?**
+Yes. freeslides.app is a free alternative to Google Slides that requires no Google account, no login, and no cloud storage. It is ideal for quick presentations where privacy and speed matter more than real-time collaboration.
+
+**Can freeslides.app do everything Google Slides can?**
+No. Google Slides offers real-time collaboration, animations, speaker notes sync, and deep integration with Google Workspace. freeslides.app focuses on simplicity, privacy, and speed. It is best for individual use when you need a quick, private slide deck.
+
+**Does freeslides.app require a Google account?**
+No. freeslides.app requires no account of any kind. There is no login, no signup, and no email required. Open the site and start making slides immediately.
+
+**Can I switch from Google Slides to freeslides.app?**
+freeslides.app does not import Google Slides files directly. However, you can recreate simple presentations quickly in freeslides.app. For complex decks with animations and embedded media, Google Slides remains the better choice.
+
+---
+
+## Page: freeslides.app vs Canva (/vs-canva.html)
+
+### freeslides.app vs Canva: Free Alternative
+
+freeslides.app is a free online slideshow maker that requires no login and no account. Canva is a comprehensive design platform with a powerful presentation tool. Both can create presentations, but they target very different use cases. This comparison is honest about what each tool does well and where each falls short.
+
+#### How does freeslides.app compare to Canva for presentations?
+
+Canva is a design-first platform with thousands of templates, stock photos, illustrations, icons, and brand kit features. Canva's presentation maker produces visually stunning slides and supports animations, embedded videos, and team collaboration. Canva's free tier is generous, though many premium assets require a Canva Pro subscription at $12.99/month.
+
+freeslides.app is a text-focused presentation maker that loads in under 200ms and works entirely offline. There are no templates to browse, no stock photos to search, and no design tools beyond choosing a font and a color theme. What freeslides.app offers instead is instant access — no signup, no login, no email, no cloud. Open the page and start typing.
+
+| Feature | freeslides.app | Canva |
+|---------|---------------|-------|
+| Price | Free | Free tier + Pro at $12.99/mo |
+| Login required | No | Yes |
+| Design templates | 3 slide themes | Thousands of templates |
+| Stock photos & media | No | Yes (millions of assets) |
+| Animations | No | Yes |
+| Collaboration | No | Yes (real-time) |
+| Offline support | Yes (full offline) | Limited |
+| Privacy | 100% local, no tracking | Cloud-based, account required |
+| Load time | Under 200ms | 3-8 seconds |
+| Export formats | PDF, JSON | PDF, PPTX, PNG, MP4, and more |
+| Brand kit | No | Yes (Pro) |
+| Font selection | 12 Google Fonts | Hundreds of fonts |
+
+#### When should you choose freeslides.app over Canva?
+
+freeslides.app is the right choice when you need slides fast and don't want to create yet another account. Students on library computers, professionals at conferences, or anyone who values privacy will appreciate that freeslides.app never asks for an email address and never uploads content to a server.
+
+freeslides.app is also better for situations where internet connectivity is unreliable. After the first load, freeslides.app works completely offline thanks to its service worker. Canva requires a stable internet connection for most operations.
+
+#### When is Canva the better choice?
+
+Canva is the better tool when visual design quality is the top priority. If you need beautiful templates, stock photography, custom brand colors, or animated transitions, Canva delivers all of that with an intuitive drag-and-drop editor. Canva also supports exporting to video formats, which freeslides.app does not.
+
+For teams that need to collaborate on presentations, Canva's shared workspace and commenting features make it far more capable than freeslides.app. Canva is also the right choice for presentations that need to impress visually — pitch decks, marketing presentations, and client-facing materials.
+
+#### FAQ
+
+**Is freeslides.app a good free alternative to Canva for presentations?**
+freeslides.app is a good alternative to Canva when you need a fast, private presentation maker with no login. Canva offers far more design tools, templates, and media assets, but requires an account and stores data in the cloud.
+
+**Does Canva require a login to make presentations?**
+Yes. Canva requires you to create an account and log in before you can use any of its tools, including the presentation maker. freeslides.app requires no login and no account of any kind.
+
+**Which is faster, freeslides.app or Canva?**
+freeslides.app loads in under 200ms because it is a single static HTML file with no server calls. Canva typically takes 3-8 seconds to load due to its large application bundle and authentication flow.
+
+**Can freeslides.app replace Canva for all presentation needs?**
+No. Canva excels at visually rich, design-heavy presentations with stock photos, illustrations, animations, and brand kits. freeslides.app is best for simple, text-focused slide decks where speed and privacy are the priority.
+
+---
+
+## Page: freeslides.app vs PowerPoint (/vs-powerpoint.html)
+
+### freeslides.app vs PowerPoint: Free Alternative
+
+freeslides.app is a free online presentation maker that runs entirely in your browser. Microsoft PowerPoint is the industry-standard desktop presentation software with decades of features. This page offers an honest, side-by-side comparison to help you decide which tool suits your needs.
+
+#### How does freeslides.app compare to Microsoft PowerPoint?
+
+Microsoft PowerPoint is the most feature-rich presentation tool available. The desktop version supports complex animations, 3D models, embedded charts, SmartArt, presenter view with notes, and seamless integration with Word, Excel, and Teams. PowerPoint's template library is enormous, and its formatting capabilities are unmatched.
+
+freeslides.app cannot match PowerPoint's depth of features. What freeslides.app offers is zero friction. There is no software to download, no Microsoft account to create, no subscription to manage, and no cloud sync to wait for. freeslides.app loads in under 200ms in any browser and keeps all data on your device. For a simple slide deck with titles and text, freeslides.app gets you from zero to presenting in seconds.
+
+| Feature | freeslides.app | PowerPoint |
+|---------|---------------|------------|
+| Price | Free | Free online (limited) / $6.99+/mo (desktop) |
+| Login required | No | Yes (Microsoft account) |
+| Installation | None (browser-based) | Desktop app or online version |
+| Animations & transitions | No | Yes (extensive) |
+| Charts & SmartArt | No | Yes |
+| Collaboration | No | Yes (online version) |
+| Offline support | Yes (full offline) | Yes (desktop app) |
+| Privacy | 100% local, no tracking | Cloud sync with Microsoft servers |
+| Load time | Under 200ms | 5-15 seconds (desktop launch) |
+| Export formats | PDF, JSON | PDF, PPTX, video, and more |
+| Templates | 3 slide themes | Hundreds of templates |
+| Max slides | 50 | Unlimited |
+
+#### When should you choose freeslides.app over PowerPoint?
+
+freeslides.app is the better option when you don't have PowerPoint installed and don't want to sign up for a Microsoft account. This is common on shared computers, Chromebooks, Linux machines, and situations where you just need a quick deck without installing software.
+
+freeslides.app is also ideal when you care about privacy. PowerPoint Online syncs your files to OneDrive. freeslides.app never transmits any data — everything stays in your browser's localStorage. For sensitive topics or confidential material, this matters.
+
+#### When is PowerPoint the better choice?
+
+PowerPoint is the right tool for professional presentations that need advanced formatting, animations, embedded media, charts, or integration with other Microsoft Office tools. If your organization uses Microsoft 365, PowerPoint's collaboration features and familiar interface make it the natural choice.
+
+PowerPoint is also better for very long presentations, complex layouts, or any situation where you need precise control over typography, alignment, and visual elements. freeslides.app intentionally limits itself to simple text slides.
+
+#### FAQ
+
+**Is freeslides.app a free alternative to PowerPoint?**
+Yes. freeslides.app is a completely free online presentation maker that requires no download, no installation, and no Microsoft account. It works in any browser and is ideal for simple presentations.
+
+**Can freeslides.app open PowerPoint files?**
+No. freeslides.app does not support .pptx file import. It uses its own JSON format for saving and loading presentations. For opening existing PowerPoint files, you will need PowerPoint or a compatible tool like Google Slides or LibreOffice Impress.
+
+**Do I need to pay for PowerPoint to make presentations?**
+Microsoft offers a free online version of PowerPoint at powerpoint.com, but it requires a Microsoft account and has limited features compared to the desktop app. The full desktop version requires a Microsoft 365 subscription starting at $6.99/month. freeslides.app is completely free with no account required.
+
+**Which is better for a quick presentation, freeslides.app or PowerPoint?**
+For a quick, simple presentation, freeslides.app is faster to get started with because there is no download, no login, and no setup. PowerPoint is better for complex presentations with animations, charts, and advanced formatting.
+
+---
+
+## Page: Free Presentation Maker No Signup (/free-presentation-maker-no-signup.html)
+
+### Free Presentation Maker No Signup
+
+freeslides.app is a free presentation maker that requires no signup, no login, and no account of any kind. Open the website in any browser and start creating slides immediately. No email address, no password, no social login — just a clean slide editor ready to use in under 200ms.
+
+#### Why do most presentation makers require signup?
+
+Most online presentation tools require accounts because they store your data on their servers, track usage for analytics, and monetize through upsells and advertising. Creating an account lets companies build user profiles, send marketing emails, and lock you into their ecosystem. For many users, this is an unnecessary barrier when all they need is a quick slide deck.
+
+freeslides.app takes a fundamentally different approach. All presentation data is stored in your browser's localStorage. No server ever sees your content. Because there is no cloud storage, there is no need for an account. Because there is no tracking, there is no need for a login. The result is a presentation maker that loads instantly and respects your time and privacy.
+
+#### What can you do with freeslides.app without signing up?
+
+freeslides.app gives you a complete slide editor without any account. You can create presentations with up to 50 slides, each containing a title, body text, and speaker notes. You can choose from 12 Google Fonts for titles and body text, and select from three slide themes — Default, Dark, and Ocean.
+
+freeslides.app supports full-screen presentation mode with keyboard navigation, touch gestures, and on-screen controls. You can export your presentation as a PDF for sharing or as a JSON file for backup. You can import previously exported JSON files to continue editing on any device. All of these features work without creating any account.
+
+#### How does freeslides.app protect your privacy without an account?
+
+freeslides.app stores all data exclusively in your browser's localStorage. No data is transmitted to any server. There are no analytics scripts, no tracking pixels, no cookies, and no third-party scripts beyond Google Fonts. The app works fully offline after the first load, meaning your content remains on your device even without an internet connection.
+
+Because freeslides.app has no server component, there is nothing to hack, no database to breach, and no account credentials to leak. Your presentations are as private as anything else stored locally on your device.
+
+#### How does freeslides.app compare to other no-signup tools?
+
+Most tools that claim to be free without signup still require an account after a trial period or limit features for anonymous users. freeslides.app has no trial period, no feature gates based on login status, and no hidden paywalls for basic functionality. The full editor is available to everyone, always, without any form of registration.
+
+freeslides.app loads in under 200ms, supports presentations up to 50 slides, and exports to both PDF and JSON. These capabilities are available without entering a single piece of personal information.
+
+#### FAQ
+
+**What is the best free presentation maker with no signup?**
+freeslides.app is a free presentation maker that requires no signup, no login, and no account. Open the website and start creating slides immediately. All data stays in your browser — nothing is uploaded to any server.
+
+**Can I make a presentation without creating an account?**
+Yes. freeslides.app lets you create, edit, present, and export presentations without any account. There is no email verification, no password, and no OAuth login. The editor loads instantly in your browser.
+
+**Is there a free online slideshow maker with no login?**
+Yes. freeslides.app is an online slideshow maker that requires no login. It works in any modern browser, supports up to 50 slides, and exports to PDF and JSON. All data is stored locally in your browser.
+
+**Are my presentations private if I use freeslides.app?**
+Yes. freeslides.app stores all presentation data in your browser's localStorage. No data is sent to any server. There is no analytics, no tracking, and no cookies. Your content never leaves your device.
+
+**Can I export presentations made without signing up?**
+Yes. freeslides.app supports PDF export via your browser's print function and JSON export for backup and transfer. Both export options work without any account or signup.
+
+---
+
+## Page: Free Presentation Maker for Students (/free-presentation-maker-for-students.html)
+
+### Free Presentation Maker for Students
+
+freeslides.app is a free presentation maker built for students who need slides fast without the hassle of creating accounts or installing software. Open freeslides.app in any browser — including on school Chromebooks and library computers — and start building your presentation in under a second. No login, no email, no signup. Just slides.
+
+#### Why is freeslides.app ideal for students?
+
+Students often need to create presentations on shared computers where they cannot install software or don't want to log into personal accounts. School libraries, computer labs, and shared family devices all present this challenge. freeslides.app solves it by running entirely in the browser with zero setup. There is nothing to download, nothing to install, and no account to create.
+
+freeslides.app loads in under 200ms, which means students spend zero time waiting and all their time working on content. The interface is simple and distraction-free — no ads, no pop-ups, no upsell banners. Students see a clean slide editor the moment the page loads.
+
+#### What features does freeslides.app offer for student presentations?
+
+freeslides.app supports presentations with up to 50 slides, which is more than enough for class projects, book reports, science fair presentations, and thesis defenses. Each slide can have a title, body text, and speaker notes. Students can choose from 12 Google Fonts and three color themes to make their presentations look polished.
+
+The built-in presentation mode lets students present directly from the browser without any additional software. Arrow keys, touch gestures, and on-screen buttons all work for navigation. Students can also export to PDF for submitting assignments as file attachments, or export to JSON for backing up their work and transferring between devices.
+
+#### Does freeslides.app work on school Chromebooks?
+
+Yes. freeslides.app is a web application that runs in any modern browser including Chrome, which is the default browser on Chromebooks. No installation is needed, no admin permissions are required, and no Chrome extensions need to be enabled. Students can bookmark freeslides.app and access it instantly from any Chromebook.
+
+freeslides.app also works offline after the first load thanks to its service worker. Students who lose Wi-Fi during class can continue editing their presentations without interruption.
+
+#### Is freeslides.app safe for students?
+
+freeslides.app collects no personal data. There is no account creation, so no email addresses or passwords are stored anywhere. All presentation data stays in the browser's localStorage on the student's device. There are no ads, no tracking pixels, no analytics scripts, and no third-party cookies. Parents and teachers can verify this — the entire application is a single HTML file with no external dependencies beyond Google Fonts for typography.
+
+#### How does freeslides.app compare to Google Slides for students?
+
+Google Slides is excellent for collaborative group projects where multiple students need to edit the same deck simultaneously. Google Slides also integrates with Google Classroom, which many schools use. For these use cases, Google Slides is the better tool.
+
+freeslides.app is the better choice for individual assignments, quick in-class presentations, and situations where students don't want to log into a Google account on a shared computer. freeslides.app is faster, more private, and requires zero setup. Both tools are free.
+
+#### FAQ
+
+**What is the best free presentation maker for students?**
+freeslides.app is a free presentation maker ideal for students. It requires no login, no account, and no software installation. Students can create slide decks instantly in any browser, including on school computers and Chromebooks.
+
+**Can students use freeslides.app on school computers?**
+Yes. freeslides.app runs entirely in the browser and requires no installation or downloads. It works on any computer with a web browser, including school-managed Chromebooks and library computers. No admin permissions are needed.
+
+**Is freeslides.app safe for students to use?**
+Yes. freeslides.app collects no personal data, requires no account, and has no ads. All presentation data stays in the browser's localStorage. There is no tracking, no cookies, and no third-party scripts beyond Google Fonts.
+
+**Can students export their presentations as PDF?**
+Yes. freeslides.app lets students export presentations as PDF files using the browser's built-in print function. This makes it easy to submit presentations as PDF attachments for class assignments.
+
+**Does freeslides.app work on Chromebooks?**
+Yes. freeslides.app is a web application that works in Chrome, Firefox, Safari, and Edge. It runs perfectly on Chromebooks without any installation. Students can create and present slides directly from the browser.

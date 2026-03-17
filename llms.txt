@@ -13,6 +13,7 @@ freeslides.app is a free, browser-based online presentation maker. No login, no 
 - Import from JSON
 - Built-in presentation mode with keyboard navigation
 - Multiple slide themes (Default, Dark, Ocean)
+- 12 Google Fonts for title and body text
 - Light and dark mode UI
 - Mobile responsive and touch-friendly
 - Loads in under 200ms
@@ -25,7 +26,13 @@ freeslides.app is a free, browser-based online presentation maker. No login, no 
 - PDF export via browser print
 - JSON export/import for backup
 - Slide themes
+- Font selection (12 Google Fonts)
 - Dark mode toggle (persisted in localStorage)
 
 ## Pages
 - / — Main app (presentation editor)
+- /vs-google-slides.html — freeslides.app vs Google Slides comparison
+- /vs-canva.html — freeslides.app vs Canva comparison
+- /vs-powerpoint.html — freeslides.app vs PowerPoint comparison
+- /free-presentation-maker-no-signup.html — Free presentation maker with no signup
+- /free-presentation-maker-for-students.html — Free presentation maker for students
