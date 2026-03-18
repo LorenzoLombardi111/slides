@@ -4,6 +4,7 @@ var URLS_TO_CACHE = [
   '/index.html',
   '/manifest.json',
   '/og-image.svg',
+  '/favicon.svg',
   '/vs-google-slides.html',
   '/vs-canva.html',
   '/vs-powerpoint.html',
